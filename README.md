@@ -23,8 +23,9 @@
   + caver.j 학습
   #
 * 4주차(9.2~9.9) 
-  + android, caver.java 연동 
+  + android, caver.j 연동 
   + 개발 고도화
+  + user 테스트
   + klaytn horizon 양식 작성
   #
 * 5주차(9.9~9.16) 
