@@ -9,6 +9,9 @@ WEEK 2 (8.20~8.26)
     + smart contract 개발: 신준오, 최중현
     + 기획 및 디자인: 송하나, 한혜
     + backend 설계: 장영
+  + USER FLOW 작성
+![image](https://user-images.githubusercontent.com/45625434/64752553-05597600-d55b-11e9-9cf5-5e2fbc487f95.png)
+
 ### 강의 수강 내용 확인
   + 클레이튼과 비트코인,이더리움의 차이점
     + 비트코인 
