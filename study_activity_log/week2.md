@@ -12,7 +12,7 @@ WEEK 2 (8.20~8.26)
   + USER FLOW 작성
   ![image](https://user-images.githubusercontent.com/45625434/64752553-05597600-d55b-11e9-9cf5-5e2fbc487f95.png)
   + 웹페이지 prototype 초안 제작
-  ![image](https://user-images.githubusercontent.com/45625434/64752553-05597600-d55b-11e9-9cf5-5e2fbc487f95.png)
+  ![image](https://user-images.githubusercontent.com/45625434/64752544-fd013b00-d55a-11e9-9eda-2da9c603d7e5.png)
 
 ### 강의 수강 내용 확인
   + 클레이튼과 비트코인,이더리움의 차이점
