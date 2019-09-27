@@ -1,0 +1,97 @@
+.header {
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    height: 388.7px;
+    background-color: #82aaf8;
+}
+
+.textbox {
+    text-align: center;
+    height: 475px;
+    padding : 30px;
+    border :30px;
+    background-color: #82aaf8;
+}
+
+.Rectangle-2 {
+    padding : 30px;
+    border :30px;
+    height: 56.1px;
+    text-align: center;
+    background-color: #ffd707;
+}
+
+.woman-3190829_1920 {
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    height: 735px;
+    border-radius: 87px;
+    background-color: #494343;
+}
+
+.Frame1_Main {
+    height: 5308px;
+    background-color: #795252;
+}
+
+.Rectangle {
+    padding : 30px;
+    border :30px;
+    height: 953px;
+    background-color: #6d6464;
+}
+
+.Frame {
+    padding : 30px;
+    border :30px;
+    height: 1762px;
+    background-color: #3f0707;
+}
+
+.btn{
+    margin-left: 10px;
+    background-color: #ffd707;
+    color: #ffffff;
+  }
+
+.box {
+    padding : 30px;
+    border : 30px; 
+}
+
+.Rectangle {
+    height: 810px;
+    background-color: #b97c7c;
+}
+
+.Nunc-porta-erat-ut-l {
+    height: 530.7px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    color: #0b162b;
+}
+  .Nunc-porta-erat-ut-l .text-style-1 {
+    font-weight: bold;
+}
+
+.Dark-Overlay {
+    display: inline-block;
+    text-align : center;
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to top, rgba(185, 210, 255, 0), #d4d5d6);
+}
+
+.bg {
+    height: 216px;
+    object-fit: contain;
+    background-color: #82aaf8;
+  }
