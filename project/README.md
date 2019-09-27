@@ -1,2 +1,2 @@
-# addition-game-starter
-Klaytn javascript native boilerplate
+# Donation
+C-Link Klaytn_Study project result
