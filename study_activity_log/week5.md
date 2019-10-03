@@ -11,16 +11,16 @@ WEEK 5 (9.16~10.3)
   + klaytn_Study/project 파일
   
   + 메인 화면
-  ![main](https://user-images.githubusercontent.com/45625434/66096872-5519e300-e5d7-11e9-9467-a9c9e8af20d7.JPG)
-  
+![main](https://user-images.githubusercontent.com/45625434/66097580-e427fa80-e5d9-11e9-8e77-45fae9a803de.JPG)
+
   + 로그인 화면
-![login](https://user-images.githubusercontent.com/45625434/66096907-72e74800-e5d7-11e9-8c2e-ce68b7f7b65b.JPG)
+![login](https://user-images.githubusercontent.com/45625434/66097582-e7bb8180-e5d9-11e9-839d-3c75c0c6f277.JPG)
+![login2](https://user-images.githubusercontent.com/45625434/66097583-e8541800-e5d9-11e9-9fdf-4486d3b7ff74.JPG)
 
   + 목표 설정(유저)
-  ![setgoal](https://user-images.githubusercontent.com/45625434/66096921-81356400-e5d7-11e9-9623-b3e4b06b718d.JPG)
-  
-  + 목표 설정 후 메인 화면
-  ![main2](https://user-images.githubusercontent.com/45625434/66096967-a5914080-e5d7-11e9-8a82-226a2a62d2a2.JPG)
+![setgoal](https://user-images.githubusercontent.com/45625434/66097590-f2761680-e5d9-11e9-9042-ddbf49a1b99c.JPG)
+![main2](https://user-images.githubusercontent.com/45625434/66097593-f4d87080-e5d9-11e9-9610-0911f044b3ae.JPG)  
   
   + 관리자 로그인 후 목표 관리
-  ![manager](https://user-images.githubusercontent.com/45625434/66096969-a75b0400-e5d7-11e9-92a8-4a081718a09e.JPG)
+![manager1](https://user-images.githubusercontent.com/45625434/66097598-fdc94200-e5d9-11e9-875c-814d997eb408.JPG)
+![manager2](https://user-images.githubusercontent.com/45625434/66097601-002b9c00-e5da-11e9-97be-1fdb5f10a2e3.JPG)
