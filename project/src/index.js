@@ -301,14 +301,13 @@ const App = {
   setUserTable: async function(){
     var cnt = await this.callgetDealCnt();
     var first = await this.callgetFirstIndex();
-    var success = "성공";
-    for(var i=first;i<=cnt;i++)
+    for(var i=first;i<cnt;i++)
     {
       var userAdd = await this.callgetUserAdd(i);
       var name = await this.callgetName(userAdd);
       var subject = await this.callgetSubject(i);
       var goal = await this.callgetGoal(i);
-      
+
       if(goal<200)
       {
         $('#UserTable > tbody:last')
@@ -316,7 +315,7 @@ const App = {
         '<td>'+subject+'</td>'+
         '<td>'+goal+'</td>'+
         '<td>'+"실패"+'</td>'+
-        '<td>'+`<button type="button" class="btn" id="logout" onclick="App.checkfail(${i})">검수</button>`+'</td>'+
+        '<td>'+`<button type="button" class="check" onclick="App.checkfail(${i})">검수</button>`+'</td>'+
         '</td></tr>');
       }
       else
@@ -326,7 +325,7 @@ const App = {
         '<td>'+subject+'</td>'+
         '<td>'+goal+'</td>'+
         '<td>'+"성공"+'</td>'+
-        '<td>'+`<button type="button" class="btn" id="logout" onclick="App.checksuccess(${i})">검수</button>`+'</td>'+
+        '<td>'+`<button type="button" class="check" onclick="App.checksuccess(${i})">검수</button>`+'</td>'+
         '</td></tr>');
       }
     }
@@ -374,9 +373,11 @@ const App = {
       document.getElementById("donationPoint").style.visibility = 'hidden';
       document.getElementById("donationPoint2").style.visibility = 'hidden';
       document.getElementById("UserTable").style.visibility = 'visible';
+      document.getElementById("goalboxs").style.visibility = 'hidden';
       await this.setUserTable();
     }
     else{
+      document.getElementById("goalboxs").style.visibility = 'visible';
       document.getElementById("goalset").style.visibility = 'visible';
       document.getElementById("UserTable").style.visibility = 'hidden';
       document.getElementById("donationPoint").style.visibility = 'visible';

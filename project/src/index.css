@@ -1,0 +1,457 @@
+.header {
+    animation: fadeIn 1s linear;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    height: 388.7px;
+    background-color: #82aaf8;
+}
+
+.Group-Copy {
+  height: 83px;
+  object-fit: contain;
+}
+
+.button {
+    width:100px;
+    padding : 30px;
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: #f8585b;
+    border: none;
+    color:rgb(163, 106, 106);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+}
+.h3{
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.buttonbox {
+  padding : 240px 30px;
+}
+
+.Rectangle2 {
+  animation: fadeIn 1s linear;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size : 25px;
+  display: table-cell;
+  vertical-align: middle;
+  padding : 30px;
+  border :30px;
+}
+
+.textbox {
+    animation: fadeIn 1s linear;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size : 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding : 25px;
+    border :25px;
+}
+
+.Rectangle-2 {
+    animation: fadeIn 1s linear;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 20px;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    background-color: #ffd707;
+}
+
+.Frame1_Main {
+    animation: fadeIn 1s linear;
+    height: 5308px;
+    background-color: #795252;
+}
+
+.Rectangle {
+    animation: fadeIn 1s linear;
+    padding : 100px 300px 100px 300px;
+    border :30px;
+}
+
+.Frame {
+    animation: fadeIn 1s linear;
+}
+
+.box {
+    animation: fadeIn 1s linear;
+    border : 30px; 
+}
+
+.Rectangle3 {
+    animation: fadeIn 1s linear;
+    padding : 30px 300px 30px 300px;
+    border :30px;
+}
+
+.Nunc-porta-erat-ut-l {
+    height: 530.7px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    color: #0b162b;
+}
+  .Nunc-porta-erat-ut-l .text-style-1 {
+    font-weight: bold;
+}
+
+.a {
+  padding : 0 0 100px 200px;
+}
+
+.Dark-Overlay {
+    font-family: 'Black Han Sans', sans-serif;
+    animation: fadeIn 1s linear;
+    vertical-align: middle;
+    display: inline-block;
+    text-align : center;
+    width: 250px;
+    padding : 20px 20px 20px 20px;
+    height: 250px;
+    margin : 50px 150px 0 0;
+    background-color: #fffef2;
+}
+
+.bg {
+    object-fit: contain;
+    padding : 0 700px 20px 700px;
+  }
+
+  .container_up{
+    background: #82aaf8;
+    width: 100%;
+    padding: 15px;
+  }
+  .text-title {
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .text-title2 {
+    margin: 10px;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  .goal-box {
+    background-color: #ffd707;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .btn{
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+  .scroll {
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+
+.btn2{
+    width:100px;
+    background-color: #faf892;
+    border: none;
+    color:rgb(80, 80, 80);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+    position : relative;
+    top : 200px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}.header {
+    animation: fadeIn 1s linear;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    height: 388.7px;
+    background-color: #82aaf8;
+}
+
+.Group-Copy {
+  height: 83px;
+  object-fit: contain;
+}
+
+.button {
+    width:100px;
+    padding : 30px;
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: #f8585b;
+    border: none;
+    color:rgb(163, 106, 106);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+}
+.h3{
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.buttonbox {
+  padding : 240px 30px;
+}
+
+.Rectangle2 {
+  animation: fadeIn 1s linear;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size : 25px;
+  display: table-cell;
+  vertical-align: middle;
+  padding : 30px;
+  border :30px;
+}
+
+.textbox {
+    animation: fadeIn 1s linear;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size : 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding : 25px;
+    border :25px;
+}
+
+.Rectangle-2 {
+    animation: fadeIn 1s linear;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 20px;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    background-color: #ffd707;
+}
+
+.Frame1_Main {
+    animation: fadeIn 1s linear;
+    height: 5308px;
+    background-color: #795252;
+}
+
+.Rectangle {
+    animation: fadeIn 1s linear;
+    padding : 100px 300px 100px 300px;
+    border :30px;
+}
+
+.Frame {
+    animation: fadeIn 1s linear;
+}
+
+.box {
+    animation: fadeIn 1s linear;
+    border : 30px; 
+}
+
+.Rectangle3 {
+    animation: fadeIn 1s linear;
+    padding : 30px 300px 30px 300px;
+    border :30px;
+}
+
+.Nunc-porta-erat-ut-l {
+    height: 530.7px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    color: #0b162b;
+}
+  .Nunc-porta-erat-ut-l .text-style-1 {
+    font-weight: bold;
+}
+
+.a {
+  padding : 0 0 100px 200px;
+}
+
+.Dark-Overlay {
+    font-family: 'Black Han Sans', sans-serif;
+    animation: fadeIn 1s linear;
+    vertical-align: middle;
+    display: inline-block;
+    text-align : center;
+    width: 250px;
+    padding : 20px 20px 20px 20px;
+    height: 250px;
+    margin : 50px 150px 0 0;
+    background-color: #fffef2;
+}
+
+.bg {
+    object-fit: contain;
+    padding : 0 700px 20px 700px;
+  }
+
+  .container_up{
+    background: #82aaf8;
+    width: 100%;
+    padding: 15px;
+  }
+  .text-title {
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .text-title2 {
+    margin: 10px;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  .goal-box {
+    background-color: #ffd707;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .btn{
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+  .scroll {
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+
+.btn2{
+    width:100px;
+    background-color: #faf892;
+    border: none;
+    color:rgb(80, 80, 80);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+    position : relative;
+    top : 200px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,169 +12,322 @@
   <script src="index.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container_up"> 
-        <h3 class="text-center">
-          <h3 class="text-title">가장 멋지게 당신의 목표를 이루는 방법</h3>
-        <p>
-          <h3 class="text-title">어학성적 목표달성 보상형 기부 플랫폼</h3>
-        </p>
-        <h1 class="text-title2">나눔</h1>
-        <div class="text-center" id="contractBalance"></div>
-      </br>
-        <p>
-          <button type="button"
-                  class="btn pull-right"
-                  id="login"
-                  data-toggle="modal"
-                  data-target="#loginModal"
-                  >
-                로그인
-          </button>
-          <button type="button"
-                  class="btn pull-right"
-                  id="logout"
-                  style="display: none;"
-                  onclick="App.handleLogout()">
-                로그아웃
-          </button>
-        </p>
-        </h3>
-        <!-- <div class="text-center" id="address"></div> -->
-        <div class="goal-box">
-          <h2 class="text-center" id="goalInfo">나의 목표:</h2>
-        </div>
-      </div>
-      <table className="table.type11" id="UserTable">
-        <thead>
-          <tr>
-            <th>유저명</th>
-            <th>과목명</th>
-            <th>목표 점수</th>
-            <th>달성 여부</th>
-            <th>검수</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-    <div class="goalset-container" id='goalset'>
-      <label for="subject">희망 과목: </label>
-      <input type="text" class="setgoal" id="subject" />
-    </br>
-    <label for="goal">목표 점수: </label>
-    <input type="number" class="setgoal" id="goal" />
-    </br>
-    <label for="money">예치 금액: </label>
-    <input type="number" class="setgoal" id="money" />
-    </br>
-    <label for="dp">기부 단체: </label>
-    <input type="text" class="setgoal" id="dp" />
-  </br>
-</br>
+                <script>
+                        jQuery(document).ready(function($) {
+                        $(".scroll").click(function(event){            
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+                        });
+                        });
+                </script>
+    <div class="Fram1_main">
+            <div class="container_up"> 
+                    <h3 class="text-center">
+                      <h3 class="text-title" style="font-family: 'Black Han Sans', sans-serif;">가장 멋지게 당신의 목표를 이루는 방법</h3>
+                    <p>
+                      <h3 class="text-title" style="font-family: 'Black Han Sans', sans-serif;">어학성적 목표달성 보상형 기부 플랫폼</h3>
+                    </p>
+                    <h1 class="text-title2" style="font-family: 'Black Han Sans', sans-serif;">나눔</h1>
+                    <p>
+                        <button type="button" class="btn" id="login" data-toggle="modal" data-target="#loginModal" style="font-family: 'Black Han Sans', sans-serif;"">
+                                로그인
+                        </button>
+                      <button type="button"
+                              class="btn pull-right"
+                              id="logout"
+                              style="display: none;"
+                              style="font-family: 'Black Han Sans', sans-serif;"
+                              onclick="App.handleLogout()">
+                            로그아웃
+                      </button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn " style="font-family: 'Black Han Sans', sans-serif;">
+                                나의 현황
+                        </button>
+                    </p>
+                    <p>
+                        <button type="button" class="btn" style="font-family: 'Black Han Sans', sans-serif;">
+                                인증하기
+                        </button>
+                    </p>
+                    </h3>
+                    <!-- <div class="text-center" id="address"></div> -->
+                    <div class="text-center" id="contractBalance"></div>
+                    <div class="goal-box">
+                      <h2 class="text-center" id="goalInfo" style="font-family: 'Black Han Sans', sans-serif;">나의 목표:</h2>
+                    </div>
+                  </div>
+            
+            <div class = "Rectangle-2">
+                        
+                <a href="#target1" class="scroll" style="font-family: 'Black Han Sans', sans-serif;"> 홈 </a>
+                <a href="#target2" class="scroll" style="font-family: 'Black Han Sans', sans-serif;"> 소개 </a>
+                <a href="#target3" class="scroll" style="font-family: 'Black Han Sans', sans-serif;"> 참여하기 </a>
+                <a href="#target4" class="scroll" style="font-family: 'Black Han Sans', sans-serif;"> 가이드 </a>
+            </div>            
+            <div class = "Rectangle" id="target2">
+                    <div class="Rectangle2">
+                                어학성적 목표달성 보상형 기부 플랫폼 나눔!<br><br>
 
-          <button 
-            type="button"
-            class="btn"
-            id="submit"
-            onclick="App.setGoals()">
-            목표설정
-          </button>
-          <button 
-            type="button"
-            class="btn pull-right"
-            id="success"
-            onclick="App.success()">
-            성공
-          </button>
-          <button 
-            type="button"
-            class="btn pull-right"
-            id="fail"
-            onclick="App.fail()">
-            실패
-          </button>
+                                외국어 공부를 하겠다고 다짐했는데 '또' 실패하셨나요? 여행, 취업 등의 목표를 위해 꼭 해야 하는데 매번 포기하게 되어 고민이시라구요?
+                                시간이 없어서, 어려워서, 귀찮아서 등등. 각자의 사정으로 여러분은 계속 공부를 미뤄왔을 겁니다. 꼭 해야만 하는 동기가 부족하기 때문이죠.
+                                '나눔'은 당신이 꼭 공부를 해야만 하는 동기를 만들어드립니다.<br><br>
+                                
+                                블록체인 기반의 어학성적 목표 달성 보상형 기부플랫폼 '나눔'은 누구에게나 필요한 어학성적, 그리고 누군가에게 꼭 필요한 도움을 위해 탄생했습니다.
+                                나눔에서 여러분은 일정량의 클레이를 걸고 어학 공부를 시작합니다. 본인이 설정한 기간 내에 목표를 달성해야만 원금을 돌려받을 수 있기 때문입니다.
+                                만약 당신이 실패한다면 그 돈은 본인의 이름으로 블록체인의 투명성을 이용해서 꼭 필요한 곳에 올바르게 기부됩니다.<br><br>
+                                
+                                우리는 블록체인을 기반으로 하여 어학성적이라는 목표를 설정하고 달성하기까지의 과정은 물론 검증과 보상, 기부에 이르는 전 과정에서 투명성과 공정성을 갖췄습니다.
+                                또한 기부금이 어느 단체에 얼마나 기부되었고 이후 어떻게 사용되었는지 추적할 수 있게 하여 신뢰성도 확보했습니다.<br><br>
+                                
+                                목표로 하는 외국어 공인인증 시험 점수를 설정하고, 보증금을 입금한 후 목표 기간 내에 달성한 뒤 어학성적을 인증하기만 하면 됩니다.<br><br>
+                                
+                                어떠신가요? 나를 위해 나눔과 함께 달려보시지 않겠어요?
+                                
+                    </div>
+            </div>
+            
+            <div class = "Frame" id = "target3">
+                <table className="table.type11" id="UserTable">
+                    <thead>
+                      <tr>
+                        <th>유저명</th>
+                        <th>과목명</th>
+                        <th>목표 점수</th>
+                        <th>달성 여부</th>
+                        <th>검수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="box" id='goalboxs'>
+                    <div class="goalset-container" id='goalset'>
+                                    <label for="subject">희망 과목 </label>
+                                    <input type="text" class="setgoal" id="subject" />
+                                  </br>
+                                  <label for="goal">목표 점수 </label>
+                                  <input type="number" class="setgoal" id="goal" />
+                                  </br>
+                                  <label for="money">예치 금액 </label>
+                                  <input type="number" class="setgoal" id="money" />
+                                  </br>
+                                  <label for="dp">기부 단체 </label>
+                                  <input type="text" class="setgoal" id="dp" />
+                                </br>
+                                <div class="donalist" id="donationPoint">사랑의 열매:0x3b0e7b486cef8334ece5330c916870053c7ad7f1</div>
+                              </br>
+                                <div class="donalist" id="donationPoint2">굿 네이버스:0xd22e6e595bb40abe9b4e75f120126c22634d98ec</div>
+                              </br>    
+                                  <button 
+                                  type="button"
+                                  class="btn"
+                                  id="submit"
+                                  onclick="App.setGoals()">
+                                  목표설정
+                                </button>
+                              </div>
+                </div>
+            </div>
+            <div class = "Rectangle3" id ="target4">
+                    <div class="textbox">
+                        <p>
+                                나눔 사용자 가이드
+                        </p>
+                        <br>
+                        1. 개인키를 이용해 로그인해주세요.<br><br>
+                        2. [참여하기]에서 참여하고자 하는 어학시험을 선택해주세요.<br><br>
+                        3. 달성하고자하는 목표점수와 기간, 금액 및 각오를 작성하고 제출을 눌러주세요.<br><br>
+                        4. [나의 현황]을 통해 원할 때마다 목표 달성까지 남은 기간을 확인하실 수 있습니다.<br><br>
+                        5. 목표 달성 후 [인증하기]에서 자랑스러운 나의 성적증명서를 인증하세요!<br>
+                    </div>
+            </div>
+            
+            <div class="bg">
+                <button type="button" class = "btn" style = "display: inline-block"> 소개 </button>
+                <button type="button" class = "btn" style = "display: inline-block"> C-Link </button>
+            </div>
     </div>
-    <!-- <div class="row text-center">
-      <div id="game" style="display: none;">
-      <div class="yellow-box" id="start">
-        <a href="#" onclick="App.generateNumbers()">시작</a>
-      </div>
-      <div class="yellow-box" id="question" style="display: none;">
-        <span id="num1"></span> + <span id="num2"></span> = ?
-        <div class="input-group">
-          <input type="number" class="form-control" id="answer"/>
-          <span class="input-group-btn">
-            <button type = "button" class="btn btn-default" onclick="App.submitAnswer()">제출</button>
-          </span>
+    <div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="keystore">KeyStore</label>
+              <input type="file" id="keystore" onchange="App.handleImport()">
+            </div>
+            <div class="form-group">
+                <label for="input-password">비밀번호</label>
+                <input type="password" class="form-control" id="input-password" onchange="App.handlePassword()">
+                <p class="help-block" id="message"></p>
+          </div>
+          <div class="form-group">
+              <label for="input-name">사용할 이름</label>
+              <input type="text" class="form-control" id="input-name">
+              <p class="help-block" id="message"></p>
         </div>
-      </div>
-    </div> -->
-
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+            <button type="button" class="btn btn-primary" id="submit" onclick="App.handleLogin()">제출</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <div id="spin"></div>
     <div class="row text-center">
       <p id="timer"></p>
     </div>
-    <div class="row text-center">
-      <div id="transaction">
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-2 col-md-offset-5">
-        <div id="owner" style="display: none;">
-        <hr />
-        <label>컨트랙에 KLAY 보내기</label>
-        <div class="input-group">
-          <input type="number" class="form-control" id="amount" />
-          <span class="input-group-btn">
-            <button type="button" class="btn" onclick="App.deposit()">송금</button>
-            </span>
-          </div>
-        </div>
-        <div class="donalist text-center" id="donationPoint">사랑의 열매:0x3b0e7b486cef8334ece5330c916870053c7ad7f1</div>
-        <div class="donalist text-center" id="donationPoint2">굿 네이버스:0xd22e6e595bb40abe9b4e75f120126c22634d98ec</div>
-      </div>
-    </div>
-
-  </div>
-  <div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="keystore">KeyStore</label>
-            <input type="file" id="keystore" onchange="App.handleImport()">
-          </div>
-          <div class="form-group">
-              <label for="input-password">비밀번호</label>
-              <input type="password" class="form-control" id="input-password" onchange="App.handlePassword()">
-              <p class="help-block" id="message"></p>
-        </div>
-        <div class="form-group">
-            <label for="input-name">사용할 이름</label>
-            <input type="text" class="form-control" id="input-name">
-            <p class="help-block" id="message"></p>
-      </div>
-      </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
-          <button type="button" class="btn btn-primary" id="submit" onclick="App.handleLogin()">제출</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
 </body>
-
 </html>
-
 <style>
-  .goalset-container{
-    margin-top: 30px;
+.header {
+    animation: fadeIn 1s linear;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    height: 388.7px;
+    background-color: #82aaf8;
+}
+.donationPoint{
+    visibility: hidden;
+  }
+  .donationPoint2{
+    visibility: hidden;
+  }
+
+.setgoal{
+  margin-bottom: 20px;
+}
+
+.Group-Copy {
+  height: 83px;
+  object-fit: contain;
+}
+
+.button {
+    width:100px;
+    padding : 30px;
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: #f8585b;
+    border: none;
+    color:rgb(163, 106, 106);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+}
+.h3{
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.buttonbox {
+  padding : 240px 30px;
+}
+
+.Rectangle2 {
+  animation: fadeIn 1s linear;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size : 25px;
+  display: table-cell;
+  vertical-align: middle;
+  padding : 30px;
+  border :30px;
+}
+
+.textbox {
+    animation: fadeIn 1s linear;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size : 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding : 25px;
+    border :25px;
+}
+
+.Rectangle-2 {
+    animation: fadeIn 1s linear;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 20px;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    background-color: #ffd707;
+}
+
+.Frame1_Main {
+    animation: fadeIn 1s linear;
+    height: 5308px;
+    background-color: #795252;
+}
+
+.Rectangle {
+    animation: fadeIn 1s linear;
+    padding : 100px 300px 100px 300px;
+    border :30px;
+}
+
+.Frame {
+    animation: fadeIn 1s linear;
+}
+
+.box {
+    animation: fadeIn 1s linear;
+    border : 30px;
+    padding: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: #fffef2;
+}
+
+.goalset-container{
     text-align: center;
   }
+
+.Rectangle3 {
+    animation: fadeIn 1s linear;
+    padding : 30px 300px 30px 300px;
+    border :30px;
+}
+
+.Nunc-porta-erat-ut-l {
+    height: 530.7px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    color: #0b162b;
+}
+  .Nunc-porta-erat-ut-l .text-style-1 {
+    font-weight: bold;
+}
+
+.a {
+  padding : 0 0 100px 200px;
+}
+
+.Dark-Overlay {
+    background-color: #fffef2;
+}
+
+.bg {
+    object-fit: contain;
+    padding : 0 700px 20px 700px;
+  }
+
   .container_up{
     background: #82aaf8;
     width: 100%;
@@ -190,7 +342,7 @@
   .text-title2 {
     margin: 10px;
     font-size: 30px;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     text-align: center;
   }
   .goal-box {
@@ -198,25 +350,289 @@
     padding: 5px;
     width: 50%;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     color: #ffffff;
   }
-  .donalist{
-    width: 400px;
-    margin-top: 10px;
-  }
+
   .btn{
-    align-self: auto;
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+  .scroll {
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+
+.btn2{
+    width:100px;
+    background-color: #faf892;
+    border: none;
+    color:rgb(80, 80, 80);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+    position : relative;
+    top : 200px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}.header {
+    animation: fadeIn 1s linear;
+    padding : 30px;
+    border :30px;
+    text-align: center;
+    height: 388.7px;
+    background-color: #82aaf8;
+}
+.check{
+  padding: 5px 10px;
+  border-radius:10px;
+}
+
+.Group-Copy {
+  height: 83px;
+  object-fit: contain;
+}
+
+.button {
+    width:100px;
+    padding : 30px;
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: #f8585b;
+    border: none;
+    color:rgb(163, 106, 106);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+}
+.h3{
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.buttonbox {
+  padding : 240px 30px;
+}
+
+.Rectangle2 {
+  animation: fadeIn 1s linear;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size : 25px;
+  display: table-cell;
+  vertical-align: middle;
+  padding : 30px;
+  border :30px;
+}
+
+.textbox {
+    animation: fadeIn 1s linear;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size : 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding : 25px;
+    border :25px;
+}
+
+.Rectangle-2 {
+    animation: fadeIn 1s linear;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 20px;
+    padding : 30px;
+    border :30px;
+    text-align: center;
     background-color: #ffd707;
+}
+
+.Frame1_Main {
+    animation: fadeIn 1s linear;
+    height: 5308px;
+    background-color: #795252;
+}
+
+.Rectangle {
+    animation: fadeIn 1s linear;
+    padding : 100px 300px 100px 300px;
+    border :30px;
+}
+
+.Frame {
+    animation: fadeIn 1s linear;
+}
+
+.box {
+    animation: fadeIn 1s linear;
+    border : 30px; 
+}
+
+.Rectangle3 {
+    animation: fadeIn 1s linear;
+    padding : 30px 300px 30px 300px;
+    border :30px;
+}
+
+.Nunc-porta-erat-ut-l {
+    height: 530.7px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    color: #0b162b;
+}
+  .Nunc-porta-erat-ut-l .text-style-1 {
+    font-weight: bold;
+}
+
+.a {
+  padding : 0 0 100px 200px;
+}
+
+.Dark-Overlay {
+    font-family: 'Black Han Sans', sans-serif;
+    animation: fadeIn 1s linear;
+    vertical-align: middle;
+    display: inline-block;
+    text-align : center;
+    width: 250px;
+    padding : 20px 20px 20px 20px;
+    height: 250px;
+    margin : 50px 150px 0 0;
+    background-color: #fffef2;
+}
+
+.bg {
+    object-fit: contain;
+    padding : 0 700px 20px 700px;
+  }
+
+  .container_up{
+    background: #82aaf8;
+    width: 100%;
+    padding: 15px;
+  }
+  .text-title {
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .text-title2 {
+    margin: 10px;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  .goal-box {
+    background-color: #ffd707;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
     color: #ffffff;
   }
-  .donationPoint{
-    visibility: hidden;
+
+  .btn{
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
   }
-  .donationPoint2{
-    visibility: hidden;
+  .scroll {
+    width:100px;
+    background-color: #ececba;
+    border: none;
+    color:rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
   }
+
+.btn2{
+    width:100px;
+    background-color: #faf892;
+    border: none;
+    color:rgb(80, 80, 80);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+    position : relative;
+    top : 200px;
+  }
+
   #fail{
     visibility: hidden;
   }
@@ -259,9 +675,35 @@
       vertical-align: top;
       border-bottom: 1px solid #82aaf8;
       background: #eee;
+      text-align: center;
   }
 
-  @keyframes spinner-line-fade-more {
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes spinner-line-fade-more {
     0%, 100% {
       opacity: 0;
     }
@@ -286,5 +728,4 @@
     1% {
       opacity: 1;
     }
-  }
-</style>
+  }</style>
